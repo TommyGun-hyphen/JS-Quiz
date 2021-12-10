@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Quiz</title>
+</head>
+<body onload="loadQuiz()">
+    <div class="instructions">
+        <h4><em>instructions:</em></h4>
+        <ul>
+            <li>Ce test contient 30 questions en HTML, CSS et Javascript. Pour chaque question cochez la bonne reponse</li>
+            <li>Pour valider le test, il fault repondre au moins a sept questions pour chaque categorie, sinon la note ne sera pas calcule (le score sur 30)</li>
+            <li>SI vous afficher la solution (SOLUTION), votre reponse sera compte comme fausse</li>
+        </ul>
+    </div>
+    <div id="sections">
+        <details class="section">
+            <summary>HTML</summary>
+            <ul class="questions">
+                <li class="question">
+                    <h3>Question numero N</h3>
+                    <p>enonce question</p>
+                    <input type="radio" name="question-1" value="N" id="reponse-1" disabled><label for="reponse-1">libelle reponse</label>
+                    <br>
+                    <input type="radio" name="question-1" value="N" id="reponse-2"><label for="reponse-2">libelle reponse</label>
+                    <button>SOLUTION</button>
+                </li>
+                <li class="question">
+                    <h3>Question numero N</h3>
+                    <p>enonce question</p>
+                    <input type="radio" name="question-1" value="N" id="reponse-1" disabled><label for="reponse-1">libelle reponse</label>
+                    <br>
+                    <input type="radio" name="question-1" value="N" id="reponse-2"><label for="reponse-2">libelle reponse</label>
+                    <button>SOLUTION</button>
+                </li>
+            </ul>
+        </details>
+    </div>
+
+    <h3 id="score"></h3>
+
+    <button id="btn_valider" onclick="valider()">Valider</button>
+</body>
+</html>

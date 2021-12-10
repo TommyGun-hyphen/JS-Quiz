@@ -1,0 +1,34 @@
+#btn_valider{
+    display: block;
+    margin:10px auto;
+}
+.instructions{
+    border: aqua 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.section{
+    margin-top: 20px;
+}
+.section summary{
+    background-color: cyan;
+    padding: 10px;
+    border: 2px black solid;
+}
+.question{
+    list-style-type: none;
+    background-color: lightskyblue;
+    border: 2px solid lightseagreen;
+    padding: 10px 30px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin: 10px 5vw;
+}
+
+.question input{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.question button{
+    display: block;
+}
